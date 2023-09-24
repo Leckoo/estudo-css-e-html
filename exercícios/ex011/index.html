@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídiasd em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos ou 
+        simplismente aumnte e diminua o tamanho do navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 710px)" srcset="imagens/foto-p.png" sizes="image/png">
+        <source media="(max-width: 1020px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir ádios em HTML5</p>
+    
+        <audio preload="metadata" autoplay controls>
+            <source src="mídia/yt1s.com - Teto  Manha.mp3" type="audio/mpeg">
+            <source src="mídia/yt1s.com - Teto  Manha.ogg" type="audio/ogg">
+            <source src="mídia/yt1s.com - Teto  Manha.wav" type="audio/wav">
+            <p>infelizmente seu navegador não consegue reproduzir áduio</p>
+            <a href="mídia/yt1s.com - Teto  Manha.mp3">Clique aqui para baixar o arquivo mp3</a>
+        </audio>
+</body>
+</html>

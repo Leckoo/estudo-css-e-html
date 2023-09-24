@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*SELETORES PERSONALIZADOS
+        #   =id
+        .   =class
+        :   =pseudo-class
+        ::  =pseudo-element
+        >   =children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        a:visited{
+            color: rgb(107, 10, 10);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: rgb(209, 185, 79);
+        }
+
+        a::after{
+            content: '[link]';
+            font-weight: normal;
+            color: rgb(80, 79, 79);
+            text-decoration: none;
+        }
+
+        .especial{
+            background-color: black;
+        }
+
+        .especial::after{
+            content: '<';
+        }
+        .especial::before{
+            content: '>';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara.github.io">Repositório github</a></li>
+        <li><a href="https://www.youtube.com/cursoemvideo/">Site do Curso em vídeo</a></li>
+        <li><a href="https://stripe.com" class="especial">Site Stripe</a></li>
+    </ul>
+    
+</body>
+</html>
