@@ -48,3 +48,32 @@ iframe#tela{
     width: 269px; 
     height: 471px;
 }
+
+
+section#redes-sociais{
+    text-align: right;
+}
+
+
+section#redes-sociais img{  /*ou posso escrever tb "section#redes-sociais > a> img", a unica coisa q não posso botar é 
+    section#redes-sociais > img, pq eu ainda tenho o link dentro*/
+    width: 50px; 
+    height: 50px; /*aqui nem precisava, pq se eu diminuo o width, diminui autmático o high tb*/
+    margin: 10px;
+    border-radius: 50%;
+    box-sizing: border-box; /*p quando der um hover não espalhar as outras img, isso significa que o tamanho da box vai até a borda
+    por padrão é content-box.
+    
+    Por exemplo, se você definir um elemento com width: 100px e height: 100px,
+    o elemento terá uma largura e altura de 100 pixels. O preenchimento e a 
+    borda não afetarão o tamanho da caixa. No entanto, você pode definir a
+    propriedade box-sizing como border-box. Isso significa que o tamanho da caixa inclui o conteúdo*/
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgb(102, 101, 101);
+    transform: scale(1.1) translate(-3px, -3px);/*qnd clicar ele vai aumentar 110% seu tamanho original e vai se movimentar levemente p esquerda*/
+    box-shadow: 5px 5px 10px black;
+    transition: transform .2s ease-in-out, border .5s ; /*para fazer a movimentação suave, o easeinout serve p transição começar devagar, acelera no meio e desacelera no final.*/
+
+}
